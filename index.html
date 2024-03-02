@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Recipe page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 15px;
+        width: 100%;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .container {
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        width: 550px;
+        border-radius: 15px;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 110vh;
+        background-color: hsl(30, 54%, 90%);
+      }
+
+      .image-container {
+        display: block;
+        margin: auto;
+      }
+
+      img {
+        margin-top: 20px;
+        border-radius: 15px;
+      }
+
+      h1 {
+        font-family: "Young Serif", sans-serif;
+        font-weight: 400;
+      }
+      h2 {
+        font-family: "Young Serif", sans-serif;
+        font-weight: 400;
+        color: hsl(14, 45%, 36%);
+        margin-left: 20px;
+      }
+
+      h3 {
+        font-family: "Outfit", sans-serif;
+        color: hsl(332, 51%, 32%);
+        margin-left: 22px;
+      }
+
+      p {
+        font-family: "outfit", sans-serif;
+        font-size: 13px;
+      }
+
+      li {
+        font-family: "outfit", sans-serif;
+        font-size: 13px;
+        padding: 6px;
+      }
+
+      hr {
+        height: 0.1px;
+        color: lightgray;
+        width: 95%;
+      }
+
+      .text {
+        margin-left: 23px;
+      }
+
+      .preparation-time {
+        margin-left: 23px;
+        background-color: hsl(330, 100%, 98%);
+        border-radius: 10px;
+        width: 500px;
+        height: 150px;
+        margin-top: 6px;
+      }
+
+      ol li::marker {
+        color: hsl(14, 45%, 36%);
+        font-weight: bold;
+      }
+
+      ul li::marker {
+        color: hsl(14, 45%, 36%);
+        font-weight: bold;
+      }
+
+      .nutrition-p {
+        margin-left: 20px;
+      }
+
+      .ul-preparation {
+        margin-left: 10px;
+        margin-top: -10px;
+      }
+
+      .nutrition-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      .nutrition-container {
+        display: flex;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 3px;
+        font-family: "Outfit", sans-serif;
+        font-size: 0.8rem;
+      }
+      th {
+        opacity: 60%;
+      }
+
+      .name {
+        padding-left: 45px;
+      }
+
+      .number {
+        padding-right: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img
+          src="./assets/images/image-omelette.jpeg"
+          height="230px"
+          alt="Omelette image"
+        />
+      </div>
+      <div class="text">
+        <h1>Simple Omelette Recipe</h1>
+        <p>
+          An easy and quick dish, perfect for any meal. This classic omelette
+          combines beaten eggs cooked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
+        </p>
+      </div>
+      <div class="preparation-time">
+        <h3>Preparation time</h3>
+        <ul class="ul-preparation">
+          <li>
+            <span style="font-weight: bold">Total:</span> Approximately 10
+            minutes
+          </li>
+          <li><span style="font-weight: bold">Preparation:</span> 5 minutes</li>
+          <li><span style="font-weight: bold">Cooking:</span> 5 minutes</li>
+        </ul>
+      </div>
+      <div class="ingredients-div">
+        <h2>Ingredients</h2>
+        <ul class="ingedients-ul">
+          <li>2-3 large eggs</li>
+          <li>Salt, to taste</li>
+          <li>Pepper, to taste</li>
+          <li>1 tablespoon of butter or oil</li>
+          <li>
+            Optional fillings: cheese, diced vegetables, cooked meats, herbs
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div class="instructions-div">
+        <h2>Instructions</h2>
+        <ol class="instructions-ol">
+          <li>
+            <span style="font-weight: bold">Beat the eggs: </span>In a bowl,
+            beat the eggs with a pinch of salt and pepper until they are well
+            mixed. You can add a tablespoon of water or milk for a fluffier
+            texture.
+          </li>
+          <li>
+            <span style="font-weight: bold">Heat the pan: </span>Place a
+            non-stick frying pan over medium heat and add butter or oil.
+          </li>
+          <li>
+            <span style="font-weight: bold">Cook the omelette:</span> Once the
+            butter is melted and bubbling, pour in the eggs. Tilt the pan to
+            ensure the eggs evenly coat the surface.
+          </li>
+          <li>
+            <span style="font-weight: bold">Add fillings (optional):</span> When
+            the eggs begin to set at the edges but are still slightly runny in
+            the middle, sprinkle your chosen fillings over one half of the
+            omelette.
+          </li>
+          <li>
+            <span style="font-weight: bold">Fold and serve:</span> As the
+            omelette continues to cook, carefully lift one edge and fold it over
+            the fillings. Let it cook for another minute, then slide it onto a
+            plate.
+          </li>
+          <li>
+            <span style="font-weight: bold">Enjoy:</span> Serve hot, with
+            additional salt and pepper if needed.
+          </li>
+        </ol>
+      </div>
+      <hr />
+      <div class="nutrition-div">
+        <h2>Nutrition</h2>
+        <p class="nutrition-p">
+          The table below shows nutritional values per serving without the
+          additional fillings.
+        </p>
+        <div class="nutrition-container">
+          <table class="nutrition-table">
+            <tbody>
+              <tr>
+                <th class="name">Calories</th>
+                <td class="number">
+                  <span style="color: hsl(14, 45%, 36%); font-weight: bold" ;
+                    >277kcal</span
+                  >
+                </td>
+              </tr>
+              <td colspan="2"><hr /></td>
+              <tr>
+                <th class="name">Carbs</th>
+                <td class="number">
+                  <span style="color: hsl(14, 45%, 36%); font-weight: bold" ;
+                    >0g</span
+                  >
+                </td>
+              </tr>
+              <td colspan="2"><hr /></td>
+              <tr>
+                <th class="name">Protein</th>
+                <td class="number">
+                  <span style="color: hsl(14, 45%, 36%); font-weight: bold" ;
+                    >20g</span
+                  >
+                </td>
+              </tr>
+              <td colspan="2"><hr /></td>
+              <tr>
+                <th class="name">Fat</th>
+                <td class="number">
+                  <span style="color: hsl(14, 45%, 36%); font-weight: bold" ;
+                    >22g</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Jordan Lalonde</a>.
+      </div>
+    </div>
+  </body>
+</html>
